@@ -1,0 +1,84 @@
+@media screen and (max-width: 1366px)
+  html
+    font-size: 15px
+  .hero
+    min-height: rem-calc(1040)
+    padding-top: rem-calc(110)
+
+@media screen and (max-width: 1200px)
+  html
+    font-size: 14px
+  .nav
+    min-width: rem-calc(430)  
+  .hero
+    min-height: rem-calc(960)
+    padding-top: rem-calc(75)
+
+@media screen and (max-width: 992px)
+  html
+    font-size: 12px
+  .nav
+    min-width: rem-calc(400)    
+  .hero
+    min-height: rem-calc(960)
+    padding-top: rem-calc(55)    
+    &__title
+      font-size: rem-calc(60)
+    &__subtitle
+      font-size: rem-calc(30)  
+    &__text
+      margin-bottom: rem-calc(45)
+
+@media screen and (max-width: 767px)     
+  html
+    font-size: 11px
+  .nav 
+    display: none 
+  .hero
+    min-height: rem-calc(780)
+    padding-top: rem-calc(30)  
+    &__content
+      max-width: rem-calc(568) 
+      width: 80%
+    &__title
+      font-size: rem-calc(50)
+    &__subtitle
+      font-size: rem-calc(25)  
+    &__text
+      display: none
+    &__buttons
+      flex-basis: 100%
+      flex-direction: row
+      flex-wrap: wrap
+      margin-right: 0
+    &__button
+      width: 45%
+      margin-right: 0.5rem  
+    &__description-text
+      display: none  
+
+@media screen and (max-width: 575px)      
+  html
+    font-size: 9px    
+  .hero
+    min-height: rem-calc(710)
+    padding-top: rem-calc(60) 
+    &__content
+      max-width: 37rem  
+      width: 100%
+    &__title
+      font-size: 2rem
+      margin-bottom: -1rem
+    &__subtitle
+      font-size: 1.05rem  
+    &__button
+      padding: rem-calc(20) rem-calc(0)
+
+@media screen and (max-width: 400px)    
+  .hero
+    min-height: rem-calc(450)
+    padding-top: 0     
+
+@media screen and (max-width: 320px)    
+  .hero
+    min-height: rem-calc(350)    

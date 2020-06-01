@@ -7,3 +7,27 @@
     color: $half-dark
   &--dark
     color: $dark  
+
+.title
+  font-family: "Roboto Light", sans-serif
+
+.button
+  font-family: "Roboto Bold", sans-serif
+  text-transform: uppercase
+  padding: rem-calc(14) rem-calc(34)  
+  font-size: rem-calc(17)
+  border: none
+  cursor: pointer
+  outline: none
+  &--primary
+    box-shadow: 0px 12px 24px 0px rgba(6,56,158,0.31)
+    background: $button
+    border-radius: 4px
+    color: $light
+    &:hover
+      box-shadow: none
+  &--outline  
+    background: transparent 0
+    color: $button
+    border: 1px solid $button
+    border-radius: 4px
