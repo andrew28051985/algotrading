@@ -328,6 +328,11 @@ template {
   font-style: normal;
   font-display: swap; }
 
+.container {
+  max-width: 1140px;
+  width: 85%;
+  margin: auto; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
