@@ -307,6 +307,27 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../font/Roboto/Roboto-Light.woff") format("woff"), url("../font/Roboto/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto Thin";
+  src: url("../font/Roboto/Roboto-Thin.woff2") format("woff2"), url("../font/Roboto/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../font/Roboto/Roboto-Bold.woff2") format("woff2"), url("../font/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
