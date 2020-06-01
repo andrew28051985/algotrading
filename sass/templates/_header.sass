@@ -1,0 +1,51 @@
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: rem-calc(30) 0 rem-calc(28)
+  &__link
+    font-size: rem-calc(20.8)
+    color: $dark
+    line-height: 1.2
+.logo
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-right: - rem-calc(57)
+  &__image
+    margin-right: rem-calc(12)  
+  &__link
+    font-size: rem-calc(19)
+    color: $dark
+    line-height: 1.2  
+    letter-spacing: rem-calc(1.3)
+.nav
+  min-width: rem-calc(508)
+  display: flex
+  justify-content: space-between
+  align-items: center   
+  &__item
+    font-size: rem-calc(14)
+    letter-spacing: rem-calc(1.2)
+    line-height: 1.4
+    position: relative
+    color: $half-dark
+    &:hover
+      color: $dark
+  &-item
+    &--active      
+      color: $dark
+      // border-bottom: 3px solid $primary
+      &:after
+        content: " "
+        display: block
+        width: 100%
+        height: 3px
+        background: $primary
+        position: absolute
+        left: 0
+        bottom: - rem-calc(33)        
+        border-radius: 1.5px
+.phone
+  &__link
+    font-size: rem-calc(23.4)        
