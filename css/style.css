@@ -401,6 +401,17 @@ img {
     border: 1px solid #0842b7;
     border-radius: 4px; }
 
+.section-title {
+  text-align: center; }
+  .section-title__heading {
+    margin: 0 auto;
+    font-family: "Roboto Thin";
+    font-size: 2.25rem;
+    letter-spacing: 0.0625rem; }
+  .section-title__text {
+    font-family: "Roboto Light";
+    font-size: 1rem; }
+
 .menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -538,7 +549,7 @@ img {
 
 .reason {
   font-family: "Roboto Light";
-  margin-bottom: 14.375rem; }
+  margin-bottom: 7.5rem; }
   .reason__container {
     position: relative; }
     .reason__container::after {
@@ -609,6 +620,18 @@ img {
   max-width: 16.375rem;
   width: 100%;
   margin-bottom: 0.9375rem; }
+
+.calc {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background: url("../img/calc/waves-left.svg") no-repeat left bottom, url("../img/calc/waves-right.svg") no-repeat right bottom; }
+  .calc__section-title-heading {
+    max-width: 31.875rem;
+    margin-bottom: 1.875rem; }
+  .calc__section-title-text {
+    max-width: 22.5rem;
+    margin: 0 auto;
+    margin-bottom: 4rem; }
 
 @media screen and (max-width: 1366px) {
   html {
