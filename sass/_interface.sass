@@ -31,6 +31,13 @@
     color: $button
     border: 1px solid $button
     border-radius: 4px
+    &-light
+      background: transparent 0
+      color: $light
+      border: 1px solid $light
+      border-radius: 4px
+.description__second
+  color: $second      
 .section
   &-title
     text-align: center
@@ -42,6 +49,19 @@
     &__text 
       font-family: "Roboto Light"
       font-size: rem-calc(16)
-      
-
-      
+.input
+  outline: none   
+  height: rem-calc(48)
+  &::placeholder
+    color: $dark   
+.form
+  &__input  
+    font-family: "Roboto Bold", sans-serif    
+    font-size: rem-calc(17)  
+    padding: rem-calc(17)   
+    border: 1.0px solid $input
+    border-radius: 4px
+  &__label
+    font-family: "Roboto Light"
+    font-size: rem-calc(16)  
+    
