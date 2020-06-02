@@ -1,0 +1,71 @@
+.reason
+  font-family: "Roboto Light"
+  margin-bottom: rem-calc(230)
+  &__container
+    position: relative
+    &::after
+      content: " "
+      position: absolute
+      left: 0
+      bottom: - rem-calc(115)
+      width: 100%
+      height: 1px
+      background: $bg-section-light 
+  &__row
+    align-items: flex-end
+    margin-top: - rem-calc(445)
+  &__title
+    margin: 0
+    font-family: "Roboto Thin"
+    font-size: rem-calc(36)  
+    letter-spacing: rem-calc(1)
+    padding: rem-calc(16)
+    background: $light
+    width: 50%
+    margin-bottom: rem-calc(6)
+  &__persent
+    margin-left: - rem-calc(16)  
+    margin-bottom: - rem-calc(5)
+  &__number-percent
+    font-family: "Roboto Thin"
+    font-size: rem-calc(342)
+    letter-spacing: -0.05em
+    color: $title
+    margin-right: rem-calc(24)
+    text-align: right
+  &__simbol-percent
+    font-family: "Roboto Thin"
+    font-size: rem-calc(112)
+    color: $second
+.col-60, .col-30
+  &__title
+    font-family: "Roboto Bold"
+    font-size: rem-calc(24)
+    color: $title
+    margin: 0
+    max-width: rem-calc(270)   
+    margin-bottom: rem-calc(28)
+  &__text
+    max-width: rem-calc(260)  
+    line-height: rem-calc(23)
+  
+.col-30
+  &:not(:last-child)
+    margin-right: rem-calc(30)  
+  &__image
+    margin-bottom: rem-calc(70)   
+  &__text
+    margin-bottom: - rem-calc(8)
+    color: $dark    
+  &__pale
+    font-family: "Roboto Thin"
+    color: $dark 
+  &-text 
+    &--last 
+      max-width: rem-calc(262)
+      width: 100%   
+      margin-bottom: rem-calc(15)
+     
+
+
+  
