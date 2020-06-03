@@ -744,12 +744,26 @@ img {
     margin-bottom: 2.25rem;
     line-height: 1.8125rem; }
 
+@media screen and (min-width: 1650px) {
+  html {
+    font-size: 17px; }
+  .hero {
+    min-height: 84.375rem;
+    padding-top: 11.25rem; }
+  .reason__title {
+    width: 55%; } }
+
 @media screen and (max-width: 1366px) {
   html {
     font-size: 15px; }
   .hero {
-    min-height: 65rem;
-    padding-top: 6.875rem; } }
+    min-height: 70.625rem;
+    padding-top: 6.875rem; }
+  .reason__title {
+    width: 52%;
+    text-align: center; }
+  .calc {
+    background: url("../img/calc/waves-right.svg") no-repeat right bottom; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -757,8 +771,12 @@ img {
   .nav {
     min-width: 26.875rem; }
   .hero {
-    min-height: 60rem;
-    padding-top: 4.6875rem; } }
+    min-height: 66.25rem;
+    padding-top: 4.6875rem; }
+  .reason__title {
+    width: 59%;
+    text-align: center;
+    margin-bottom: -1.5625rem; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -766,14 +784,18 @@ img {
   .nav {
     min-width: 25rem; }
   .hero {
-    min-height: 60rem;
+    min-height: 66.25rem;
     padding-top: 3.4375rem; }
     .hero__title {
       font-size: 3.75rem; }
     .hero__subtitle {
       font-size: 1.875rem; }
     .hero__text {
-      margin-bottom: 2.8125rem; } }
+      margin-bottom: 2.8125rem; }
+  .reason__title {
+    width: 66%; }
+  .calc {
+    background: #ffffff; } }
 
 @media screen and (max-width: 767px) {
   html {
@@ -781,7 +803,7 @@ img {
   .nav {
     display: none; }
   .hero {
-    min-height: 48.75rem;
+    min-height: 41.875rem;
     padding-top: 1.875rem; }
     .hero__content {
       max-width: 35.5rem;
@@ -795,28 +817,43 @@ img {
     .hero__buttons {
       -webkit-flex-basis: 100%;
           -ms-flex-preferred-size: 100%;
-              flex-basis: 100%;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      margin-right: 0; }
+              flex-basis: 100%; }
     .hero__button {
-      width: 45%;
+      width: 50%;
       margin-right: 0.5rem; }
     .hero__description-text {
-      display: none; } }
+      display: none; }
+  .reason__title {
+    display: none; }
+  .reason__row {
+    margin-top: 1.875rem;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .reason__number-percent {
+    font-size: 13.4375rem; }
+  .reason__persent {
+    margin-top: -2.5rem; }
+  .col-30__image {
+    margin-bottom: 1.0625rem; }
+  .col-30-image--first {
+    margin-bottom: 2.5rem; }
+  .col-60 {
+    margin: auto; }
+  .calc__col-30 {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .reason__row {
+    margin-top: -15%; } }
 
 @media screen and (max-width: 575px) {
   html {
     font-size: 9px; }
   .hero {
-    min-height: 44.375rem;
-    padding-top: 3.75rem; }
+    min-height: auto;
+    padding: 5% 0 20%; }
     .hero__content {
       max-width: 37rem;
       width: 100%; }
@@ -826,7 +863,50 @@ img {
     .hero__subtitle {
       font-size: 1.05rem; }
     .hero__button {
-      padding: 1.25rem 0rem; } }
+      padding: 1.25rem 0rem; }
+  .reason {
+    margin-bottom: 0; }
+    .reason__row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 2%; }
+    .reason__col {
+      -webkit-flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
+    .reason__container::after {
+      bottom: 0; }
+  .col-30 {
+    margin: auto;
+    margin-bottom: 5%; }
+    .col-30:not(:last-child) {
+      margin-left: auto;
+      margin-right: auto; }
+  .col-60 {
+    margin-bottom: 5%; }
+  .calc {
+    padding: 5% 0; }
+    .calc__form {
+      margin-right: auto;
+      text-align: center; } }
+
+@media screen and (max-width: 450px) {
+  .calc__row-input-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 5%; }
+  .calc__col-input-group {
+    margin-bottom: 5%; }
+  .calc-row-input-group--top {
+    margin-bottom: 0; }
+    .calc-row-input-group--top::after {
+      display: none; } }
 
 @media screen and (max-width: 400px) {
   .hero {

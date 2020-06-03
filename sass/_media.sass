@@ -1,9 +1,24 @@
+@media screen and (min-width: 1650px)
+  html
+    font-size: 17px
+  .hero
+    min-height: rem-calc(1350)
+    padding-top: rem-calc(180)
+  .reason
+    &__title
+      width: 55%  
 @media screen and (max-width: 1366px)
   html
     font-size: 15px
   .hero
-    min-height: rem-calc(1040)
+    min-height: rem-calc(1130)
     padding-top: rem-calc(110)
+  .reason
+    &__title
+      width: 52%   
+      text-align: center
+  .calc
+    background: url('../img/calc/waves-right.svg') no-repeat right bottom      
 
 @media screen and (max-width: 1200px)
   html
@@ -11,8 +26,13 @@
   .nav
     min-width: rem-calc(430)  
   .hero
-    min-height: rem-calc(960)
+    min-height: rem-calc(1060)
     padding-top: rem-calc(75)
+  .reason
+    &__title
+      width: 59%   
+      text-align: center
+      margin-bottom: - rem-calc(25)
 
 @media screen and (max-width: 992px)
   html
@@ -20,14 +40,19 @@
   .nav
     min-width: rem-calc(400)    
   .hero
-    min-height: rem-calc(960)
+    min-height: rem-calc(1060)
     padding-top: rem-calc(55)    
     &__title
       font-size: rem-calc(60)
     &__subtitle
       font-size: rem-calc(30)  
     &__text
-      margin-bottom: rem-calc(45)
+      margin-bottom: rem-calc(45)  
+  .reason
+    &__title
+      width: 66%      
+  .calc
+    background: $light      
 
 @media screen and (max-width: 767px)     
   html
@@ -35,7 +60,7 @@
   .nav 
     display: none 
   .hero
-    min-height: rem-calc(780)
+    min-height: rem-calc(670)
     padding-top: rem-calc(30)  
     &__content
       max-width: rem-calc(568) 
@@ -48,21 +73,44 @@
       display: none
     &__buttons
       flex-basis: 100%
-      flex-direction: row
-      flex-wrap: wrap
-      margin-right: 0
     &__button
-      width: 45%
+      width: 50%
       margin-right: 0.5rem  
     &__description-text
       display: none  
+  .reason
+    &__title
+      display: none    
+    &__row 
+      margin-top: rem-calc(30)  
+      align-items: flex-start
+    &__number-percent 
+      font-size: rem-calc(215)  
+    &__persent 
+      margin-top: - rem-calc(40)  
+  .col-30 
+    &__image
+      margin-bottom: rem-calc(17)
+    &-image
+      &--first
+        margin-bottom: rem-calc(40)   
+  .col-60
+    margin: auto      
+  .calc
+    &__col-30
+      display: none            
+
+@media screen and (max-width: 600px)    
+  .reason
+    &__row
+      margin-top: -15%      
 
 @media screen and (max-width: 575px)      
   html
     font-size: 9px    
   .hero
-    min-height: rem-calc(710)
-    padding-top: rem-calc(60) 
+    min-height: auto
+    padding: 5% 0 20%
     &__content
       max-width: 37rem  
       width: 100%
@@ -73,6 +121,41 @@
       font-size: 1.05rem  
     &__button
       padding: rem-calc(20) rem-calc(0)
+  .reason
+    margin-bottom: 0
+    &__row
+      flex-direction: column
+      margin-top: 2%
+    &__col 
+      flex-basis: 100%  
+    &__container
+      &::after
+        bottom: 0  
+  .col-30
+    margin: auto
+    margin-bottom: 5%
+    &:not(:last-child) 
+      margin-left: auto
+      margin-right: auto       
+  .col-60
+    margin-bottom: 5%   
+  .calc 
+    padding: 5% 0
+    &__form
+      margin-right: auto
+      text-align: center   
+
+@media screen and (max-width: 450px)
+  .calc
+    &__row-input-group 
+      flex-direction: column   
+      margin-bottom: 5%   
+    &__col-input-group 
+      margin-bottom: 5%    
+    &-row-input-group--top 
+      margin-bottom: 0
+      &::after
+        display: none  
 
 @media screen and (max-width: 400px)    
   .hero
