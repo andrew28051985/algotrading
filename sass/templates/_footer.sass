@@ -1,0 +1,104 @@
+.footer
+  padding: rem-calc(117) 0 rem-calc(118)
+  &__wrapper 
+    display: flex
+    flex-direction: column
+    margin-left: rem-calc(2)
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: rem-calc(22)
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      background: url("../img/footer/icon-letter.svg") no-repeat center
+      width: 21px
+      height: 17px
+      right: 15px
+      bottom: 16px
+  &__description
+    display: flex
+    justify-content: space-between
+    align-items: flex-start    
+    &-title
+      width: rem-calc(150)
+      line-height: rem-calc(22)
+    &-menu 
+      width: rem-calc(438)  
+  &__nav
+    display: flex
+    justify-content: space-between
+    &-item    
+      font-family: "Roboto Thin"
+      font-size: rem-calc(16)
+      text-transform: none
+      line-height: rem-calc(28)
+      letter-spacing: 0
+  &__text
+    margin: 0
+  &__title
+    margin: 0
+    font-family: "Roboto Thin"
+    font-size: rem-calc(24)
+    margin-top: rem-calc(2)
+    letter-spacing: rem-calc(0.3)
+  &__input 
+    border: 1.0px solid $input
+    border-radius: 4px  
+    width: rem-calc(263)
+    padding: rem-calc(17) rem-calc(17)
+    color: $half-dark
+    &::placeholder
+      color: $half-dark
+  &__icon 
+    width: rem-calc(263)    
+    display: flex
+    justify-content: space-between
+.nav
+  &__column
+    display: flex
+    flex-direction: column    
+.column
+  &--right
+    padding-right: rem-calc(5)    
+.link
+  &__icon
+    position: relative
+    display: block
+    &:not(:last-child)
+      margin-right: -40px      
+    &::after
+      content: ""
+      width: 40px
+      height: 40px
+      border: 1px solid $button
+      border-radius: 20px
+      position: absolute
+      right: 0
+      bottom: 20
+    &-facebook
+      &::after
+        background: url("../img/footer/icon-1.svg") no-repeat center
+        margin-right: -40px
+    &-vk
+      &::after
+        background: url("../img/footer/icon-2.svg") no-repeat center   
+        margin-right: -30px 
+    &-youtube
+      &::after
+        background: url("../img/footer/icon-3.svg") no-repeat center    
+        margin-right: -20px
+    &-instagram
+      &::after
+        background: url("../img/footer/icon-4.svg") no-repeat center 
+        margin-right: -10px  
+    &-arrowup
+      &::after
+        background: url("../img/footer/icon-5.svg") no-repeat center     
+
+
+
+
+    

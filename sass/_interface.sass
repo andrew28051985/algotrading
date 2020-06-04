@@ -52,8 +52,7 @@
 .input
   outline: none   
   height: rem-calc(48)
-  &::placeholder
-    color: $dark   
+    
 .form
   &__input  
     font-family: "Roboto Bold", sans-serif    
@@ -61,6 +60,8 @@
     padding: rem-calc(17)   
     border: 1.0px solid $input
     border-radius: 4px
+    &::placeholder
+      color: $dark 
   &__label
     font-family: "Roboto Light"
     font-size: rem-calc(16)  
