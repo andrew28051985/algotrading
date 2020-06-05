@@ -727,7 +727,7 @@ img {
 .calc {
   padding-top: 6.875rem;
   padding-bottom: 7.5rem;
-  background: url("../img/calc/waves-left.svg") no-repeat left bottom, url("../img/calc/waves-right.svg") no-repeat right bottom; }
+  background: url("../img/calc/waves-left.png") no-repeat left bottom, url("../img/calc/waves-right.svg") no-repeat right bottom; }
   .calc__section-title-heading {
     max-width: 31.875rem;
     margin-bottom: 1.875rem; }
