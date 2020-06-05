@@ -39,6 +39,9 @@
     font-size: 12px
   .nav
     min-width: rem-calc(400)    
+    &__item
+      &:nth-child(2)
+        margin-left: 0        
   .hero
     min-height: rem-calc(1060)
     padding-top: rem-calc(55)    
@@ -52,7 +55,24 @@
     &__title
       width: 66%      
   .calc
-    background: $light      
+    background: $light     
+  .link 
+    &__icon
+      &-facebook
+        &::after
+          margin-right: -20px
+      &-vk
+        &::after   
+          margin-right: -15px 
+      &-youtube
+        &::after    
+          margin-right: -10px
+      &-instagram
+        &::after 
+          margin-right: -5px     
+  .footer
+    &__nav
+      justify-content: space-around        
 
 @media screen and (max-width: 767px)     
   html
@@ -98,7 +118,33 @@
     margin: auto      
   .calc
     &__col-30
-      display: none            
+      display: none        
+  .footer
+    &__description
+      &-title
+        display: none
+    &__nav
+      justify-content: flex-start
+    &__top 
+      &::after
+        bottom: rem-calc(12) 
+  .nav
+    &__column
+      margin-right: rem-calc(20)   
+  .link 
+    &__icon
+      &-facebook
+        &::after
+          margin-right: 0px
+      &-vk
+        &::after   
+          margin-right: 0px 
+      &-youtube
+        &::after    
+          margin-right: 0px
+      &-instagram
+        &::after 
+          margin-right: 0px   
 
 @media screen and (max-width: 600px)    
   .reason
@@ -144,6 +190,26 @@
     &__form
       margin-right: auto
       text-align: center   
+  .footer
+    &__input
+      width: 65%
+    &__nav
+      display: none
+  .link 
+    &__icon
+      &-facebook
+        &::after
+          margin-right: 40px
+      &-vk
+        &::after   
+          margin-right: 30px
+      &-youtube
+        &::after    
+          margin-right: 20px
+      &-instagram
+        &::after 
+          margin-right: 10px      
+
 
 @media screen and (max-width: 450px)
   .calc
@@ -161,6 +227,29 @@
   .hero
     min-height: rem-calc(450)
     padding-top: 0     
+  .footer
+    &__top
+      flex-direction: column
+      justify-content: flex-end
+      align-items: flex-end
+    &__title  
+      margin-bottom: 5%
+    &__input
+      width: 83%  
+  .link 
+    &__icon
+      &-facebook
+        &::after
+          margin-right: 80px
+      &-vk
+        &::after   
+          margin-right: 60px
+      &-youtube
+        &::after    
+          margin-right: 40px
+      &-instagram
+        &::after 
+          margin-right: 20px
 
 @media screen and (max-width: 320px)    
   .hero
